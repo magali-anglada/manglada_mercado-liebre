@@ -1,0 +1,81 @@
+/*Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+body {
+    background-color: #EAC926;
+    font-family: 'Roboto';
+}   
+
+.logo {
+    width: 30%;
+    margin-left: 2%
+}
+.burger-menu {
+    color: blue;
+    background-color:#EAC926;
+    width: 100%;
+    text-align: center
+}
+.titles {
+    font-size: 24px;
+}
+.prices {
+    font-size: 18px;
+}
+
+.discounts {
+    font-size: 16px;
+}
+
+.description{
+    font-size: 16px;
+}
+.product {
+    background-color: white;
+    width: 98%;
+    margin: 1%;    
+}
+.header {
+    font-size: 12px; 
+    background-color: #EAC926;
+}
+.footer{
+    background-color: white;
+    text-align: center 
+}
+.footer-text{
+    background-color: white;
+    width: 25%;
+    margin-left: 37.5%;
+}
+.footer-icon{
+    width: 2em;
+    margin-bottom: 10px;
+    color: blue;
+}
+.footer-copyrigth{
+    background-color: white;
+    text-align: left;
+    font-size: 12px
+}
+.align-center{
+    text-align: center
+}
+.bg-yellow {
+    background-color: #EAC926;
+}
+.bg-grey {
+    background-color: rgba(221, 219, 219, 0.952);
+    width: 100%;
+}
+.align-left {
+    text-align: left;
+}
+.icon{
+    color: blue;
+}
+
