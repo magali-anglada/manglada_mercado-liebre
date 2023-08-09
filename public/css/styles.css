@@ -1,81 +1,89 @@
-/*Amarillo: #EAC926;
+/*
+Amarillo: #EAC926;
 Azul: #03264C;
 Celeste: #1259c3;
 Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;
 */
-body {
-    background-color: #EAC926;
-    font-family: 'Roboto';
-}   
 
-.logo {
-    width: 30%;
-    margin-left: 2%
-}
-.burger-menu {
-    color: blue;
-    background-color:#EAC926;
-    width: 100%;
-    text-align: center
-}
-.titles {
+.titles-24px
+{
     font-size: 24px;
 }
-.prices {
+
+.text-body-12px
+{
+    font-size: 12px;
+}
+.prices-18px
+{
     font-size: 18px;
 }
-
-.discounts {
+.detail-16px
+{
     font-size: 16px;
 }
+.icon-burger-menu{
+    background: #1259c3;
+    color: white;
+    width: 5%;
+    border-radius: 15%;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.icon-2em{
+    width: 2em;    
+}
+.icon-blue{
+    color: #1259c3
+}
+.logo{
+    width: 45%;
+}
+.txt-center{
+    text-align: center;
+}
+.txt-left{
+    text-align: left;
+}
 
-.description{
-    font-size: 16px;
-}
-.product {
-    background-color: white;
-    width: 98%;
-    margin: 1%;    
-}
-.header {
-    font-size: 12px; 
-    background-color: #EAC926;
-}
-.footer{
-    background-color: white;
-    text-align: center 
-}
-.footer-text{
-    background-color: white;
-    width: 25%;
-    margin-left: 37.5%;
-}
-.footer-icon{
-    width: 2em;
+.margen-b-10px{
     margin-bottom: 10px;
-    color: blue;
 }
-.footer-copyrigth{
-    background-color: white;
-    text-align: left;
-    font-size: 12px
-}
-.align-center{
-    text-align: center
-}
-.bg-yellow {
-    background-color: #EAC926;
-}
-.bg-grey {
-    background-color: rgba(221, 219, 219, 0.952);
-    width: 100%;
-}
-.align-left {
-    text-align: left;
-}
-.icon{
-    color: blue;
+.margen-t-20px{
+    margin-top: 20px;
 }
 
+.margen-l-37perc{
+    margin-left: 22%;
+}
+.margen-r-37perc{
+    margin-right: 22%;
+}
+
+.bg-color-light-grey{
+    background-color: #ebebeb;
+}
+.bg-color-grey{
+    background-color: #666;
+}
+.br-solid-black-1px{
+    border: solid 1px black;
+}
+.bg-color-yellow{
+    background-color: #EAC926;
+}
+.bg-color-white{
+    background-color: white;
+}
+
+.margen-10px{
+    margin: 10px;
+}
+.w-90perc{
+    width: 90%,
+}
