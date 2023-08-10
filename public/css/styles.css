@@ -6,25 +6,36 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;
 */
-
-.titles-24px
-{
+.titles-24px {
     font-size: 24px;
 }
 
-.text-body-12px
-{
+.text-body-12px {
     font-size: 12px;
 }
-.prices-18px
-{
+
+.article-m-10px-bg-white {
+    background-color: white;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.prices-18px {
     font-size: 18px;
 }
-.detail-16px
-{
+
+.description-16px-gey {
     font-size: 16px;
+    color: #666;
 }
-.icon-burger-menu{
+
+.discount-16px-green {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.icon-burger-menu {
     background: #1259c3;
     color: white;
     width: 5%;
@@ -35,55 +46,105 @@ Verde: #39b54a;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.icon-2em{
-    width: 2em;    
+
+.icon-2em {
+    width: 2em;
 }
-.icon-blue{
+
+.icon-blue {
     color: #1259c3
 }
-.logo{
+
+.logo {
     width: 45%;
 }
-.txt-center{
+
+.txt-center {
     text-align: center;
 }
-.txt-left{
+
+.txt-left {
     text-align: left;
 }
 
-.margen-b-10px{
+.margen-b-10px {
     margin-bottom: 10px;
 }
-.margen-t-20px{
+
+.margen-t-20px {
     margin-top: 20px;
 }
 
-.margen-l-37perc{
+.margen-l-37perc {
     margin-left: 22%;
 }
-.margen-r-37perc{
+
+.margen-r-37perc {
     margin-right: 22%;
 }
 
-.bg-color-light-grey{
-    background-color: #ebebeb;
+.margen-10px {
+    margin: 10px;
 }
-.bg-color-grey{
+
+.margen-15px {
+    margin: 15px;
+}
+
+.margen-l-40px {
+    margin-left: 40px;
+}
+ 
+.bg-color-grey {
     background-color: #666;
 }
-.br-solid-black-1px{
+
+.br-solid-black-1px {
     border: solid 1px black;
+    padding: 3px;
 }
-.bg-color-yellow{
+
+.brt-solid-ligthgrey-1px-p15px {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.bg-color-yellow {
     background-color: #EAC926;
 }
-.bg-color-white{
+
+.bg-color-white {
     background-color: white;
 }
 
-.margen-10px{
-    margin: 10px;
+.section_main {
+    background-color: #ebebeb;
 }
-.w-90perc{
-    width: 90%,
+
+.display_flex{
+    display: flex;
+}
+
+/* Recommended measures in class:
+    Mobile -> (361px) - 520px
+    Tablet -> 768px - (1025px)
+    Desktop Estandar -> 1280px - (1440px)
+    Desktop HD -> 1600px - (1920px) */
+
+/*Tablets*/
+@media (max-width: 768px) {      
+    .md-mobile-no-display {
+        display: none;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 768px) {  
+    .md-higher-mobile-shadow {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .md-higher-mobile-no-display {
+        display: none;
+    }
+
 }
