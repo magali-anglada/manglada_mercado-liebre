@@ -15,3 +15,12 @@ app.listen(PORT, () => console.log('Se prendió en el puerto ' + PORT));
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'));
 })
+app.get('/register', (req,res) => {
+    res.sendFile(path.join(__dirname, '/views/register.html'));
+})
+app.get('/login', (req,res) => {
+    res.sendFile(path.join(__dirname, '/views/login.html'));
+})
+app.post('/home', (req,res) => {
+    res.sendFile(path.join(__dirname, '/views/home.html'));
+})
