@@ -24,19 +24,19 @@
 <body>
     <header class="bg-color-yellow">
         <!--Header section-->
-        <div class="flex-container-header">
+        <div class="flex-container-header margen-15px">
             <div class="flex-container-header-item">
                 <h1 class="logo">
                     <img src="/images/logo-mercado-liebre.svg" alt="Logo-mercado-liebre">
                 </h1>
             </div>
             <div class="flex-container-header-item">
-                <input type="text" placeholder="Buscar productos, marcas">
-                <i class="fa-solid fa-magnifying-glass bg-color-white margen-10px"></i>
+                <p><input type="text" class="nav-search-input" placeholder="Buscar productos, marcas">
+                    <i class="fa-solid fa-magnifying-glass bg-color-white margen-10px"></i>
+                </p>
             </div>
             <div class="flex-container-header-item">
-                <p class="margen-l-40px"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta
-                    de crédito </p>
+                <p class=" margen-15px margen-l-40px"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito </p>
             </div>
         </div>
         <div class="md-mobile-no-display">
@@ -46,10 +46,8 @@
                 <li class="fc-nav-bar-item"><a href="#">Vender</a></li>
                 <li class="fc-nav-bar-item"><a href="#">Ayuda</a></li>
                 <li class="fc-nav-bar-separator"><a href="#"></a></li>
-                <li class="fc-nav-bar-item"><a href="/register">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i>
-                </li>
-                <li class="fc-nav-bar-item"><a href="/login">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i>
-                </li>
+                <li class="fc-nav-bar-item"><a href="/register">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
+                <li class="fc-nav-bar-item"><a href="/login">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
                 <li class="fc-nav-bar-item"><a href="#">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </div>
@@ -65,13 +63,13 @@
         <h1>Login</h1>
         <form action="/home" method="POST">
             <div>
-                <input type="text" placeholder="Nombre de usuario" id="nombreUsuario">
+                <input type="text" placeholder="Nombre de usuario" id="nombreUsuario" class="input_strings">
             </div>
             <div>
-                <input type="password" placeholder="Contraseña" id="password">
+                <input type="password" placeholder="Contraseña" id="password" class="input_strings">
             </div>
             <div>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="button">Enviar</button>
             </div>
         </form>
     </main>
@@ -105,5 +103,4 @@
         </div>
     </footer>
 </body>
-
 </html>

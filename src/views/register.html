@@ -24,18 +24,19 @@
 <body>
     <header class="bg-color-yellow">
         <!--Header section-->
-        <div class="flex-container-header">
+        <div class="flex-container-header margen-15px">
             <div class="flex-container-header-item">
                 <h1 class="logo">
                     <img src="/images/logo-mercado-liebre.svg" alt="Logo-mercado-liebre">
                 </h1>
             </div>
             <div class="flex-container-header-item">
-                <input type="text" placeholder="Buscar productos, marcas">
-                <i class="fa-solid fa-magnifying-glass bg-color-white margen-10px"></i>
+                <p><input type="text" class="nav-search-input" placeholder="Buscar productos, marcas">
+                    <i class="fa-solid fa-magnifying-glass bg-color-white margen-10px"></i>
+                </p>
             </div>
             <div class="flex-container-header-item">
-                <p class="margen-l-40px"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito </p>
+                <p class=" margen-15px margen-l-40px"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito </p>
             </div>
         </div>
         <div class="md-mobile-no-display">
@@ -59,29 +60,29 @@
     </header>
 
     <main class="section_main">
-        <h2>Registrarse</h2>
+        <h2 class="titles-24px">Registrarse</h2>
         <form action="/home" method="POST">
             <div>
-                <input type="text" placeholder="Nombre y apellido" id="nombreApellido">
+                <input type="text" placeholder="Nombre y apellido" id="nombreApellido" class="input_strings">
             </div>
             <div>
-                <input type="text" placeholder="Nombre de usuario" id="nombreUsuario">
+                <input type="text" placeholder="Nombre de usuario" id="nombreUsuario" class="input_strings">
             </div>
             <div>
-                <input type="email" placeholder="Email" id="email">
+                <input type="email" placeholder="Email" id="email" class="input_strings">
             </div>
             <div>
                 <label for="fechaNac">
-                    <h3>Fecha de nacimiento</h3>
+                    <h3 class="margen-15px">Fecha de nacimiento</h3>
                 </label>
                 <input type="date" placeholder="Fecha de nacimiento" id="fechaNac">
             </div>
             <div>
-                <input type="text" placeholder="Domicilio" id="domicilio">
+                <input type="text" placeholder="Domicilio" id="domicilio" class="input_strings">
             </div>
             <div>
                 <label>
-                    <h3>Perfil de usuario</h3>
+                    <h3 class="margen-15px">Perfil de usuario</h3>
                 </label>
                 <div>
                     <input type="radio" name="perfil" id="comprador">
@@ -94,7 +95,7 @@
             </div>
             <div>
                 <label>
-                    <h3>Intereses</h3>
+                    <h3 class="margen-15px">Intereses</h3>
                 </label>
                 <div>
                     <input type="checkbox" name="electro">
@@ -122,17 +123,19 @@
                 <input type="file" name="avatar" accept=".jpg" multiple>           
             </div>
             <div>
-                <input type="password" placeholder="Contraseña" id="password">
+                <input type="password" placeholder="Contraseña" id="password" class="input_strings">
             </div>
             <div>
-                <input type="password" placeholder="Confirmar contraseña" id="passwordConf">
+                <input type="password" placeholder="Confirmar contraseña" id="passwordConf" class="input_strings">
             </div>
-            <div>
-                <button type="submit">Enviar</button>
+            <div class="fc-buttons">
+            <div class="fc-buttons-item">
+                <button type="submit" class="button">Enviar</button>
             </div>
-            <div>
-                <button type="reset">Cancelar</button>
+            <div class="fc-buttons.item">
+                <button type="reset" class="button">Cancelar</button>
             </div>
+        </div>
         </form>
 
     </main>
