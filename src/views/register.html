@@ -24,19 +24,24 @@
 <body>
     <header class="bg-color-yellow">
         <!--Header section-->
-        <div class="flex-container-header margen-15px">
-            <div class="flex-container-header-item">
-                <h1 class="logo">
+        <div class="flex-container-header margen-15px p-1">
+            <div class="flex-container-header-logo">
+                <h1>
                     <img src="/images/logo-mercado-liebre.svg" alt="Logo-mercado-liebre">
                 </h1>
             </div>
-            <div class="flex-container-header-item">
-                <p><input type="text" class="nav-search-input" placeholder="Buscar productos, marcas">
-                    <i class="fa-solid fa-magnifying-glass bg-color-white margen-10px"></i>
-                </p>
+            <div class="flex-container-header-item p-2">
+                <form action="/" class="p-1 display_flex radius-1 bg-color-white">
+                    <input class="flex-grow b-none outline-none font-xl" type="text" name="search"
+                        placeholder="Buscá productos por nombre, marcas o palabras clave" />
+                    <button type="submit" class="bg-color-white b-none">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
             </div>
             <div class="flex-container-header-item">
-                <p class=" margen-15px margen-l-40px"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito </p>
+                <p class=" margen-15px margen-l-40px"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y
+                    sin tarjeta de crédito </p>
             </div>
         </div>
         <div class="md-mobile-no-display">
@@ -46,39 +51,40 @@
                 <li class="fc-nav-bar-item"><a href="#">Vender</a></li>
                 <li class="fc-nav-bar-item"><a href="#">Ayuda</a></li>
                 <li class="fc-nav-bar-separator"><a href="#"></a></li>
-                <li class="fc-nav-bar-item"><a href="/register">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
-                <li class="fc-nav-bar-item"><a href="/login">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+                <li class="fc-nav-bar-item"><a href="/register">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i>
+                </li>
+                <li class="fc-nav-bar-item"><a href="/login">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i>
+                </li>
                 <li class="fc-nav-bar-item"><a href="#">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </div>
         <div class="icon-burger-menu md-higher-mobile-no-display">
             <i class="fa-solid fa-bars fa-2xs"></i>
         </div>
-        <div>
+        <div class="bg-color-ligth-grey">
             <img src="/images/img-home-banner.jpg" alt="Banner" width="100%">
         </div>
     </header>
 
     <main class="section_main">
-        <h2 class="titles-24px">Registrarse</h2>
-        <form action="/home" method="POST">
+        <form action="/home" method="POST" class="form_register" >
             <div>
-                <input type="text" placeholder="Nombre y apellido" id="nombreApellido" class="input_strings">
+                <input type="text" placeholder=" Nombre y apellido" id="nombreApellido" class="input_strings" maxlength="250">
             </div>
             <div>
-                <input type="text" placeholder="Nombre de usuario" id="nombreUsuario" class="input_strings">
+                <input type="text" placeholder=" Nombre de usuario" id="nombreUsuario" class="input_strings" maxlength="">
             </div>
             <div>
-                <input type="email" placeholder="Email" id="email" class="input_strings">
+                <input type="email" placeholder=" Email" id="email" class="input_strings" maxlength="120">
             </div>
             <div>
                 <label for="fechaNac">
                     <h3 class="margen-15px">Fecha de nacimiento</h3>
                 </label>
-                <input type="date" placeholder="Fecha de nacimiento" id="fechaNac">
+                <input type="date" placeholder=" Fecha de nacimiento" id="fechaNac">
             </div>
             <div>
-                <input type="text" placeholder="Domicilio" id="domicilio" class="input_strings">
+                <input type="text" placeholder=" Domicilio" id="domicilio" class="input_strings">
             </div>
             <div>
                 <label>
@@ -123,51 +129,60 @@
                 <input type="file" name="avatar" accept=".jpg" multiple>           
             </div>
             <div>
-                <input type="password" placeholder="Contraseña" id="password" class="input_strings">
+                <input type="password" placeholder=" Contraseña" id="password" class="input_strings" required>
             </div>
             <div>
-                <input type="password" placeholder="Confirmar contraseña" id="passwordConf" class="input_strings">
+                <input type="password" placeholder=" Confirmar contraseña" id="passwordConf" class="input_strings" required>
             </div>
             <div class="fc-buttons">
             <div class="fc-buttons-item">
-                <button type="submit" class="button">Enviar</button>
-            </div>
-            <div class="fc-buttons.item">
                 <button type="reset" class="button">Cancelar</button>
             </div>
+            <div class="fc-buttons-item">
+                <button type="submit" class="button">Enviar</button>
+            </div>            
         </div>
         </form>
 
     </main>
     <!--Footer-->
     <footer>
-        <div class="txt-center"> <i class="fa-solid fa-credit-card icon-2em margen-b-10px margen-t-20px icon-blue"></i>
-            </p>
-            <h3>Pagá con tarjeta o en efectivo</h3>
-            <div class="margen-l-37perc margen-r-37perc">
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
-                    siempre es
-                    seguro!</p>
+        <div class="md-fc-footer">
+            <div class="fc-footer-item txt-center">
+                <i class="fa-solid fa-credit-card icon-2em margen-b-10px margen-t-20px icon-blue"></i>
+                </p>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <div class="margen-l-37perc margen-r-37perc">
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.
+                        ¡Y
+                        siempre es
+                        seguro!</p>
+                </div>
             </div>
-            <i class="fa-solid fa-gift icon-2em margen-b-10px margen-t-20px icon-blue"></i>
-            <h3>Envío gratis desde $ 2.500</h3>
-            <div class="margen-l-37perc margen-r-37perc">
-                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
-                    beneficio de
-                    Mercado Puntos.</p>
+            <div class="fc-footer-item txt-center">
+                <i class="fa-solid fa-gift icon-2em margen-b-10px margen-t-20px icon-blue"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <div class="margen-l-37perc margen-r-37perc">
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                        beneficio de
+                        Mercado Puntos.</p>
+                </div>
             </div>
-            <i class="fa-solid fa-user-shield icon-2em margen-b-10px margen-t-20px icon-blue"></i>
-            <h3>Seguridad, de principio a fin</h3>
-            <div class="margen-l-37perc margen-r-37perc">
-                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
-                    protegid@.</p>
+            <div class="fc-footer-item txt-center">
+                <i class="fa-solid fa-user-shield icon-2em margen-b-10px margen-t-20px icon-blue"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <div class="margen-l-37perc margen-r-37perc">
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás
+                        siempre
+                        protegid@.</p>
+                </div>
             </div>
         </div>
-
         <div class="txt-left margen-t-20px">
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </div>
     </footer>
+
 </body>
 
 </html>

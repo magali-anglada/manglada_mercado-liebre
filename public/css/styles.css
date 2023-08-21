@@ -25,12 +25,26 @@ Verde: #39b54a;
     font-size: 12px;
 }
 
-.article-m-10px-bg-white {
+.font-xl {
+    font-size: 18px;
+    bg-white }
+  
+.p-1 {
+    padding: 8px;
+  }
+
+.p-2 {
+    padding: 20px;
+  }
+
+  .article-m-10px-bg-white {
     background-color: white;
     margin-bottom: 10px;
     margin-left: 5%;
-    width: 90%;
 }
+.w-100 {
+    width: 100%;
+  }
 
 .prices-18px {
     font-size: 18px;
@@ -49,7 +63,8 @@ Verde: #39b54a;
 .icon-burger-menu {
     background: #1259c3;
     color: white;
-    width: 5%;
+    width: 10%;
+    height: 10%;
     border-radius: 15%;
     position: relative;
     left: 50%;
@@ -70,7 +85,7 @@ Verde: #39b54a;
     color: #EAC926;
 }
 .logo {
-    width: 45%;
+    width: 50%;
 }
 
 .txt-center {
@@ -113,6 +128,9 @@ Verde: #39b54a;
     background-color: #666;
 }
 
+.bg-color-ligth-grey {
+    background-color: #ebebeb;
+}
 .br-solid-black-1px {
     border: solid 1px black;
     padding: 3px;
@@ -140,45 +158,55 @@ Verde: #39b54a;
     display: flex;
 }
 
+.flex-grow {
+    flex-grow: 1;
+}
+  
+.b-none {
+    border: none;
+  }
+
+  .outline-none {
+    outline: none;
+  }
+
+.radius-1 {
+    border-radius: 5px;
+  }
+
 .button{
     border-radius: 6px;
     background-color: #1259c3;
     border-color: transparent;
     color: white;
     width: 100%;
+    height: 40px;
     margin-top: 10px;
 }
 .button:hover{
     background-color: #0022AA;
 }
 
+.form_register{
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
 /* Recommended measures in class:
     Mobile -> (361px) - 520px
     Tablet -> 768px - (1025px)
     Desktop Estandar -> 1280px - (1440px)
     Desktop HD -> 1600px - (1920px) */
 
-/*Tablets*/
+/*Mobile*/
 @media (max-width: 768px) {      
     .md-mobile-no-display {
         display: none;
     }
 }
 
-
-/*Tablets*/
-@media (max-width: 1280px) {      
-    .md-tablets-no-display {
-        display: none;
-    }
-    .md-fc-footer {
-        display: flex;  
-        flex-direction: column;
-    }    
-}
-
-
-@media (min-width: 768px) {  
+/*Tablet*/
+@media (min-width: 769px) {  
     .md-higher-mobile-shadow {
         box-shadow: none ;
     }
@@ -191,12 +219,12 @@ Verde: #39b54a;
     .md-product-description{
         display: none;
     }
-    .md-product-description:hover{
+    .product-desc-box:hover .md-product-description{
         display: block;
     }
 }
 
-@media (min-width: 1280px) {  
+@media (min-width: 1281px) {  
 
     .md-higher-Desktop-no-display {
         display: none;
@@ -205,8 +233,30 @@ Verde: #39b54a;
         display: flex;  
         flex-direction: row;
     }
-
+    .md-w-25 {
+        width: 20%;
+      }
+    
 }
+
+/*Tablets*/
+@media (max-width: 1280px) {      
+    .md-tablets-no-display {
+        display: none;
+    }
+    .md-fc-footer {
+        display: flex;  
+        flex-direction: column;
+    }
+}
+ 
+@media (min-width: 481px) {
+    /* tablet */
+    .md-w-50 {
+      width: 48%;
+    }
+  }
+
 .fc-footer-item{
  flex-wrap: nowrap;
 }
@@ -247,7 +297,9 @@ top: -15px;
 }
 .fc-products  {
     display: flex;  
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 10px;
 }
 
 .flex-container-products-price {
@@ -259,12 +311,17 @@ top: -15px;
 }
 .flex-container-header {
     display: flex;  
-    justify-content: space-around; 
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .flex-container-header-item {
-    width: 50%;
+flex-grow: 1;
+text-align: center;
+}
+
+.flex-container-header-logo {
+    width: 25%;
 }
 
 .flex-container-item2 {
@@ -293,10 +350,13 @@ top: -15px;
 .fc-buttons{
     display: flex;
     justify-content: space-around; 
-    width: 20%;
+    width: 100%;
 }
 .fc-buttons-item{
     flex-wrap: nowrap;
+    width: 40%;
+    padding-bottom: 10px;
+    padding-top: 15px;
 }
 
 .input_strings{
@@ -304,9 +364,16 @@ top: -15px;
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
     height: 40px;
-    width: 50%;
+    width: 100%;
     border-style: solid;
     border-color: rgba(0,0,0,0);
     border-width: 1.5px;
     margin-top: 10px;
 }
+
+.fc-login{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
