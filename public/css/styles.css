@@ -165,7 +165,7 @@ align-content: center;}
 .flex-grow {
     flex-grow: 1;
 }
-  
+
 .b-none {
     border: none;
   }
@@ -178,6 +178,10 @@ align-content: center;}
     border-radius: 5px;
   }
 
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
 .button{
     border-radius: 6px;
     background-color: #1259c3;
