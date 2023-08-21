@@ -1,4 +1,5 @@
-const PORT = 3001;
+// Local during development --> const PORT = 3003;
+const PORT = process.env.PORT || 3004;
 
 // 1) Importar tanto el framework Express y path.
 const express = require('express');

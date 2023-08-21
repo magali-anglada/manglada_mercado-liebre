@@ -19,6 +19,8 @@ Verde: #39b54a;
 }
 .titles-24px {
     font-size: 24px;
+    color: #666;
+    padding: 20px;
 }
 
 .text-body-12px {
@@ -152,7 +154,9 @@ Verde: #39b54a;
 .section_main {
     background-color: #ebebeb;
     padding: 1%;
-}
+    width: 90%;
+    margin-left: 5%;
+align-content: center;}
 
 .display_flex{
     display: flex;
@@ -191,6 +195,11 @@ Verde: #39b54a;
     margin-left: 15%;
     margin-right: 15%;
 
+}
+.form_login{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 50%;
 }
 /* Recommended measures in class:
     Mobile -> (361px) - 520px
@@ -304,10 +313,12 @@ top: -15px;
 
 .flex-container-products-price {
     width: 30%;
+    text-align: left;
 }
 
 .flex-container-products-discount {
     width: 70%;
+    text-align: left;
 }
 .flex-container-header {
     display: flex;  
@@ -360,7 +371,7 @@ text-align: center;
 }
 
 .input_strings{
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
     height: 40px;
@@ -376,4 +387,5 @@ text-align: center;
     justify-content: center;
     width: 100%;
 }
+
 
